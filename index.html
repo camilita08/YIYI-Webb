@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YIYI - Tu mundo, es YIYI</title>
+    <meta name="description" content="YIYI es una app móvil con asistente virtual de IA para encontrar las mejores opciones de compra, transporte y entretenimiento según tu ubicación y presupuesto.">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav class="nav" aria-label="Navegación principal" role="navigation">
+        <div class="logo">
+            <!-- Imagen 1: Logo YIYI -->
+            <img src="logo_yiyi1.png" alt="Logo YIYI" class="logo-img" height="70" width="70" loading="lazy">
+            <span>YIYI</span>
+        </div>
+        <button id="mobile-menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-controls="nav-links" aria-expanded="false">
+            ☰
+        </button>
+        <div class="nav-links" id="nav-links" role="menu">
+            <button type="button" class="btn-nav" onclick="location.href='#inicio'" role="menuitem">Inicio</button>
+            <button type="button" class="btn-nav" onclick="location.href='#que-es'" role="menuitem">¿Qué es YIYI?</button>
+            <button type="button" class="btn-nav" onclick="location.href='#caracteristicas'" role="menuitem">Características</button>
+            <button type="button" class="btn-nav" onclick="location.href='#ventajas'" role="menuitem">Ventajas</button>
+            <button type="button" class="btn-nav" onclick="location.href='#funciona'" role="menuitem">Cómo funciona</button>
+            <!-- NUEVO: Botón que abre modal con QR para instalar la app -->
+            <!-- Cambia el valor de data-playstore al enlace real de tu app en Play Store -->
+            <button id="install-app-btn" class="btn-nav" type="button"
+                    aria-controls="qr-modal" aria-expanded="false" aria-haspopup="dialog"
+                    data-playstore="https://play.google.com/store/apps/details?id=com.ejemplo.yiyi">
+                Instalar App
+            </button>
+
+            <button type="button" class="btn-nav" onclick="location.href='#contacto'" role="menuitem">Contacto</button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div>
+            <div class="hero-badge">
+                App móvil con asistente de IA
+            </div>
+
+            <h1 class="hero-title">
+                Tu ciudad, <span>tu tiempo</span>,<br>
+                <span>tu mundo es YIYI.</span>
+            </h1>
+            <p class="hero-eslogan">“Tu mundo, es YIYI”</p>
+            <p class="hero-text">
+                YIYI es una app móvil con asistente virtual de inteligencia artificial
+                que busca por ti las mejores opciones de <strong>compra, transporte y entretenimiento</strong>
+                según tu ubicación, necesidades y presupuesto.
+            </p>
+            <div class="hero-actions">
+                <button type="button" class="btn-primary" aria-disabled="true" title="Próximamente">Muy pronto en tu tienda de apps</button>
+                <button type="button" class="btn-ghost" id="goHow" aria-label="Ver cómo funciona YIYI">Ver cómo funciona</button>
+                <button type="button" class="btn-secondary" onclick="location.href='#caracteristicas'" aria-label="Ver características">Características</button>
+                <button type="button" class="btn-secondary" onclick="location.href='#contacto'" aria-label="Habla con nosotros">Contacto</button>
+            </div>
+            <p class="hero-note">
+                Pensada para estudiantes y trabajadores de la zona papanteca.
+            </p>
+        </div>
+        <div class="hero-mock">            
+
+            <figure class="phone-frame" aria-label="Demo visual de la app móvil">
+                <div class="phone-inner">
+                    <div class="phone-logo">YIYI</div>
+                    <div class="phone-search">
+                        🔍 <span>¿Qué necesitas hoy?</span>
+                    </div>
+                    <div class="phone-assistant">
+                        Hola, soy <strong>YIYI</strong> 💬<br>
+                        Puedo ayudarte a encontrar <strong>loncherías, papelerías y transporte</strong>
+                        cerca de ti, ajustadas a tu presupuesto.
+                        <span class="phone-tag">Conectado a Maps y Life360</span>
+                    </div>
+                </div>
+                <figcaption class="visually-hidden">Simulación del asistente virtual YIYI en acción.</figcaption>
+            </figure>
+            <!-- Imagen 2: Topo con mapa, como mascotita buscadora -->
+            <img src="yiyi_1.png" alt="Mascota topo explorador leyendo un mapa" class="hero-img" height="120" width="120" loading="lazy" style="margin-top:1.5em;">
+        </div>
+    </section>
+
+    <!-- QUE ES -->
+    <section id="que-es">
+        <p class="section-subtitle">Acerca de la app</p>
+        <h2>¿Qué es YIYI?</h2>
+        <div class="concept-grid">
+            <div>
+                <p>
+                    YIYI es una aplicación móvil con un asistente virtual de IA llamada
+                    <strong>YIYI</strong>, diseñada para optimizar los recursos
+                    de las personas en su día a día. Está enfocada en ayudar a estudiantes y trabajadores,
+                    especialmente de la zona papanteca.
+                </p>
+                <br>
+                <div class="concept-card">
+                    <strong>Propósito</strong>
+                    <p>
+                        Ayudar a estudiantes y trabajadores a satisfacer sus necesidades
+                        diarias, priorizando siempre la mejor opción según su ubicación y presupuesto.
+                    </p>
+                    <br>
+                    <strong>Objetivo</strong>
+                    <p>
+                        Proporcionar una herramienta útil, accesible y fácil de usar,
+                        adaptable a cualquier edad y entorno.
+                    </p>
+                    <button type="button" class="btn-secondary" onclick="location.href='#caracteristicas'" aria-label="Ver características principales">Ver características</button>
+                </div>
+            </div>
+            <div class="concept-card">
+                <strong>El concepto del sitio web:</strong>
+                <div class="concept-list">
+                    <div class="concept-item"><div class="concept-icon">🎨</div><div>Diseño limpio y profesional con el color #f4b324.</div></div>
+                    <div class="concept-item"><div class="concept-icon">📑</div><div>Estructura clara y ligera para navegar.</div></div>
+                    <div class="concept-item"><div class="concept-icon">🧑‍🎓</div><div>Un estilo juvenil y dinámico.</div></div>
+                    <div class="concept-item"><div class="concept-icon">⚡</div><div>Mostrar la esencia: facilidad, diversión, accesibilidad.</div></div>
+                </div>
+                <button type="button" class="btn-secondary" onclick="location.href='#ventajas'" aria-label="Conoce las ventajas y desventajas">Ver ventajas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARACTERISTICAS -->
+    <section id="caracteristicas">
+        <p class="section-subtitle">Características principales</p>
+        <h2>Lo que hace única a YIYI</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Diseño responsivo</h3>
+                <p>La página se adapta automáticamente a todos los dispositivos.</p>
+            </div>
+            <div class="card">
+                <h3>Sección principal llamativa</h3>
+                <p>Con el nombre de la app, botones e imagen representativa.</p>
+            </div>
+            <div class="card">
+                <h3>Descripción clara</h3>
+                <p>Explica qué es YIYI y su propósito en el día a día.</p>
+            </div>
+            <div class="card">
+                <h3>Integración tecnológica</h3>
+                <p>Usa servicios como Google Maps y Life360.</p>
+            </div>
+        </div>
+        <div style="text-align:center;margin-top:1em;">
+            <button type="button" class="btn-secondary" onclick="location.href='#funciona'" aria-label="Saber cómo funciona">¿Cómo funciona?</button>
+        </div>
+    </section>
+
+    <!-- VENTAJAS -->
+    <section id="ventajas">
+        <p class="section-subtitle">Análisis del proyecto</p>
+        <h2>Ventajas y desventajas</h2>
+        <div class="two-columns">
+            <div class="card">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li>Respuestas rápidas.</li>
+                    <li>Disponible para móviles.</li>
+                    <li>Recopila reseñas y comentarios.</li>
+                    <li>Guarda números de servicios.</li>
+                    <li>Registra rutas y lugares favoritos.</li>
+                </ul>
+                <button type="button" class="btn-secondary" onclick="location.href='#contacto'" aria-label="Contáctanos para saber más">Contactar</button>
+            </div>
+            <div class="card bad">
+                <h3>Desventajas</h3>
+                <ul>
+                    <li>Requiere conexión a internet.</li>
+                    <li>No es compatible con todos los celulares.</li>
+                    <li>Pide ubicación activa.</li>
+                    <li>Riesgos de privacidad.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUNCIONAMIENTO -->
+    <section id="funciona">
+        <p class="section-subtitle">Flujo general</p>
+        <h2>¿Cómo funcionará?</h2>
+        <div class="steps">
+            <div class="card"><div class="step-number">1</div><h3>Planeación</h3><p>Se define propósito, logo e interfaz.</p></div>
+            <div class="card"><div class="step-number">2</div><h3>Estudio</h3><p>Se analiza a estudiantes y trabajadores.</p></div>
+            <div class="card"><div class="step-number">3</div><h3>Desarrollo</h3><p>Se programa la app y se hacen pruebas.</p></div>
+            <div class="card"><div class="step-number">4</div><h3>Lanzamiento</h3><p>Se publica y se mejora continuamente.</p></div>
+        </div>
+        <div style="text-align:center;margin-top:1em;">
+            <button type="button" class="btn-secondary" onclick="location.href='#contacto'" aria-label="Iniciar contacto">¡Contáctanos!</button>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <p class="section-subtitle">¿Quieres saber más?</p>
+        <h2>Contacto</h2>
+        <form class="contact-form" autocomplete="off" aria-label="Formulario de contacto" action="mailto:tucorreo@ejemplo.com" method="POST" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="50">
+
+            <label for="institucion">Materia e institución:</label>
+            <input type="text" id="institucion" name="institucion" required maxlength="100">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="3" maxlength="255"></textarea>
+
+            <button type="submit" class="btn-primary">Enviar mensaje</button>
+        </form>
+        <!-- Imagen 3: Topo amigable con corazón, emocional -->
+        <div style="text-align:center;margin-top:1.7em;">
+            <img src="yiyi_2.png" alt="Mascota topo sonriendo y enviando corazón" class="contact-img" height="90" width="90" loading="lazy">
+            <br>
+            <button type="button" class="btn-secondary" onclick="location.href='#inicio'" aria-label="Volver al inicio">Ir al inicio</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <span>© 2025 YIYI · Proyecto académico.</span>
+        <span>Construido con HTML5 + CSS3</span>
+        <button type="button" class="footer-up btn-secondary" onclick="location.href='#inicio'" aria-label="Volver arriba">↑</button>
+    </div>
+</footer>
+
+<!-- Modal / QR (hidden by default) -->
+<div id="qr-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="qr-title" aria-hidden="true">
+    <div class="modal" role="document">
+        <header class="modal-header">
+            <h2 id="qr-title">Instala YIYI</h2>
+            <button id="qr-close" class="btn-nav" aria-label="Cerrar ventana">✕</button>
+        </header>
+        <div class="modal-body">
+            <p>Escanea el código QR con tu cámara para ir a la Play Store o usa el enlace directo.</p>
+            <img id="qr-image" class="qr-img" alt="Código QR para instalar YIYI" src="" />
+            <p class="qr-link-wrap">
+                <a id="open-playstore" class="btn-secondary" href="#" target="_blank" rel="noopener">Abrir en Play Store</a>
+                <button id="copy-link-btn" class="btn-ghost" type="button" aria-label="Copiar enlace de Play Store">Copiar enlace</button>
+            </p>
+            <p class="modal-note">Si tu aplicación aún no está publicada, cambia el enlace en el atributo data-playstore del botón "Instalar App".</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
